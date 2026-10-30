@@ -332,9 +332,17 @@
       btn.addEventListener('click', function () { endSession('home'); });
     });
 
+    Array.prototype.forEach.call(document.querySelectorAll('[data-skip]'), function (btn) {
+      btn.addEventListener('click', finishExercise); // skip = finish early
+    });
+
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && (currentScreen === 'ready' || currentScreen === 'session')) {
+      if (currentScreen !== 'ready' && currentScreen !== 'session') return;
+      if (e.key === 'Escape') {
         endSession('home');
+      } else if (e.key === 'ArrowRight' && !e.repeat && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault();
+        finishExercise();
       }
     });
 

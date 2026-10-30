@@ -129,7 +129,7 @@ h2[tabindex="-1"]:focus { outline: none; }
   overflow: hidden;
 }
 
-/* Shared icon button (theme toggle, quit) */
+/* Shared icon button (theme toggle, quit, skip) */
 .icon-btn {
   flex: 0 0 auto;
   width: 48px;
