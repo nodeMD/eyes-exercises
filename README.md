@@ -5,3 +5,5 @@ Maybe they will be helpful for you too.
 Works best in FullScreen mode.
 
 It is open source: https://github.com/nodeMD/eyes-exercises so if you would like to edit those exercises or add more feel free to do so by forking this repository.
+
+You can skip exercise by clicking "->" (arrow right key) on the keyboard. Or quit exercises by clicking "esc" key.
